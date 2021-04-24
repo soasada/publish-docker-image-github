@@ -46,6 +46,17 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                    <image>
+                        <name>docker.pkg.github.com/soasada/${project.artifactId}</name>
+                        <publish>true</publish>
+                    </image>
+                    <docker>
+                        <publishRegistry>
+                            <username>soasada</username>
+                            <password>${env.GITHUB_TOKEN}</password>
+                            <url>https://docker.pkg.github.com/soasada/${project.artifactId}/</url>
+                        </publishRegistry>
+                    </docker>
                 </configuration>
             </plugin>
         </plugins>
