@@ -54,7 +54,7 @@
                         <publishRegistry>
                             <username>soasada</username>
                             <password>${env.GITHUB_TOKEN}</password>
-                            <url>https://docker.pkg.github.com</url>
+                            <url>https://docker.pkg.github.com/</url>
                         </publishRegistry>
                     </docker>
                 </configuration>
